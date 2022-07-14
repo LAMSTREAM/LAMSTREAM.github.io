@@ -1,37 +1,103 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 
   <head>
-    <meta charset="utf-8" name="testing_html" content="It's for test diverse html elements" />
     <title>Title of the html document</title>
-    <base href="https://www.google.com" target="_blank">
-    <style type="text/css">
-      a{text-decoration: none; color: hotpink;font-size: 30px;}
-      p{font-size: 30px;}
-      body {
-        background-color: blanchedalmond; 
-        font-family: "Arial Black", Helvetica, sans-serif; 
-        font-size: 16px; 
-        color: silver;
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      .classtest{
+        background-color: rgba(22, 22, 22, 0.5);
+        color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      a:link,a:visited{
+        color:pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      table{
+        border:10px solid #c56262;
+        border-style: inset;
+        width: 400px;
+      }
+      th,td{
+        border-collapse: collapse;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #999999;
+      }
+      iframe{
+        width: 800px;
+        height: 600px;
+        border: none;
       }
     </style>
   </head>
 
   <body>
 
-    <h1>This is an example document</h1>
-    <hr />
-    <a href="" >default link to Google</a> 
-    <br />
-    <p>special char test: &dollar; //emoji test: &#128512;</p>
-
-    <!-- google.com iframe & long comment example
-    <iframe src="https://www.google.com/webhp?igu=1" width="800" height="400"></iframe>
-    google.com iframe -->
-
-    <div align="center">
-      <iframe width="1280" height="720" src="https://www.youtube.com/embed/tfs8AoE_XXc" title="ความลับมีในโลก [ SECRET ] - INK WARUNTORN [ Official MV ]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div> <!--text example-->
+      <a href="https://www.google.com" target="_blank" title="link to goole.com"><h1>This is an example document</h1><a>
+      <hr />
+      <a href="" >default link to Google</a> 
+      <br />
+      <p>special char test: &dollar;</p>
+      <p>emoji test: &#128512;</p>
     </div>
+    
+    <div> <!--img with map example-->
+      <img src="19_piano1_4k.jpg" alt="Perfect Backside" width="800" usemap="#workmap">
+      <map name="workmap">
+      <area shape="rect" coords="0,0,800,600" onclick="myFunction()">
+      </map>
+      <script>
+        function myFunction() {
+          alert("picture clicked!");
+        }
+      </script>
+    </div>
+    
+
+    <div class="classtest"><!--table example-->>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Name</th>
+          <th>Gender</th>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Frank</td>
+          <td>male</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Cloie</td>
+          <td>female</td>
+        </tr>
+      </table>
+      <ul style="list-style-type: circle;">
+        <caption>types of drink</caption>
+        <li>milk</li>
+        <li>tea</li>
+        <li>coffee</li>
+      </ul>
+  
+      <ol type="A">
+        <caption>rank of English country</caption>
+        <li>US</li>
+        <li>UK</li>
+        <li>CA</li>
+      </ol>
+    </div>
+
+    
+    <div align="center"><!--iframe example-->
+      <iframe name="test" src="https://www.youtube.com/embed/tfs8AoE_XXc" title="ความลับมีในโลก [ SECRET ] - INK WARUNTORN [ Official MV ]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+
   </body>
 
 </html>
