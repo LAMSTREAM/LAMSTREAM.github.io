@@ -1,61 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
   <head>
-    <title>Title of the html document</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMSTREAM_WebPage</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <base href="https://www.google.com" target="_blank">
     <style>
-      .classtest{
+      .classtest {
         background-color: rgba(22, 22, 22, 0.5);
         color: white;
         padding: 10px;
         margin: 10px;
       }
-      a:link,a:visited{
+      a:link,a:visited {
         color:pink;
         background-color: transparent;
         text-decoration: none;
       }
-      table{
+      table {
         border:10px solid #c56262;
         border-style: inset;
         width: 400px;
       }
-      th,td{
+      th,td {
         border-collapse: collapse;
         border-radius: 10px;
         text-align: center;
         background-color: #999999;
       }
-      iframe{
+      iframe {
         width: 800px;
         height: 600px;
         border: none;
       }
     </style>
+    <script>
+      function myFunction() {
+        alert("picture clicked!");
+      }
+    </script>
   </head>
 
   <body>
 
     <div> <!--text example-->
-      <a href="https://www.google.com" target="_blank" title="link to goole.com"><h1>This is an example document</h1><a>
+      <a href="" title="link to goole.com"><h1>This is an example document</h1><a>
       <hr />
       <a href="" >default link to Google</a> 
       <br />
-      <p>special char test: &dollar;</p>
-      <p>emoji test: &#128512;</p>
+      <p>special char test: &euro;</p>
+      <p style="font-size: 4vw;">emoji test: &#128512;</p>
     </div>
     
     <div> <!--img with map example-->
-      <img src="19_piano1_4k.jpg" alt="Perfect Backside" width="800" usemap="#workmap">
+      <img src="image/piano.jpg" alt="Perfect Backside" width="800" usemap="#workmap">
       <map name="workmap">
       <area shape="rect" coords="0,0,800,600" onclick="myFunction()">
       </map>
-      <script>
-        function myFunction() {
-          alert("picture clicked!");
-        }
-      </script>
     </div>
     
 
@@ -94,7 +97,10 @@
 
     
     <div align="center"><!--iframe example-->
-      <iframe name="test" src="https://www.youtube.com/embed/tfs8AoE_XXc" title="ความลับมีในโลก [ SECRET ] - INK WARUNTORN [ Official MV ]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe name="test" src="https://www.youtube.com/embed/tfs8AoE_XXc" 
+      title="ความลับมีในโลก [ SECRET ] - INK WARUNTORN [ Official MV ]" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
     </div>
     
 
